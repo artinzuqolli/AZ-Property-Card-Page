@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .font-serif-gold {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+  
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #FFF0B3 0%, #E6C280 30%, #C5A059 60%, #F5D77F 85%, #9E7B32 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-gradient-border {
+    border-image: linear-gradient(to right, #C5A059, #F5D77F, #9E7B32) 1;
+  }
+
+  .gold-shimmer {
+    background: linear-gradient(90deg, rgba(197,160,89,0.08) 0%, rgba(245,215,127,0.25) 50%, rgba(197,160,89,0.08) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 4s infinite linear;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Custom scrollbar matching Elegant Dark */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
