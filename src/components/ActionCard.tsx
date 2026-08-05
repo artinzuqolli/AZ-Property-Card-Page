@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 interface ActionCardProps {
   icon: React.ReactNode;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   onClick?: () => void;
   href?: string;
   variant?: 'dark' | 'cream';
@@ -60,14 +60,16 @@ export const ActionCard: React.FC<ActionCardProps> = ({
           >
             {title}
           </span>
-          <span
-            className={`
-              text-xs sm:text-[13px] leading-tight truncate mt-0.5
-              ${variant === 'dark' ? 'text-zinc-400 group-hover:text-amber-200/90' : 'text-zinc-600'}
-            `}
-          >
-            {subtitle}
-          </span>
+          {subtitle && (
+            <span
+              className={`
+                text-xs sm:text-[13px] leading-tight truncate mt-0.5
+                ${variant === 'dark' ? 'text-zinc-400 group-hover:text-amber-200/90' : 'text-zinc-600'}
+              `}
+            >
+              {subtitle}
+            </span>
+          )}
         </div>
       </div>
 
