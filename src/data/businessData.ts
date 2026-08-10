@@ -12,7 +12,7 @@ export const businessContact: BusinessContact = {
   email: 'info@azprop.co.uk',
   instagram: '@az.prop',
   instagramUrl: 'https://instagram.com/az.prop',
-  googleReviewUrl: 'https://g.page/r/az-property-review',
+  googleReviewUrl: 'https://share.google/qkWuIcK4qogF409z6',
 };
 
 export const propertyServicesList: PropertyService[] = [

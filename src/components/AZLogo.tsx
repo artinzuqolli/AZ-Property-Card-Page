@@ -18,8 +18,8 @@ export const AZLogo: React.FC<{ size?: 'sm' | 'md' | 'lg' }> = ({ size = 'md' })
       </div>
 
       {/* Main Text: AZ PROPERTY */}
-      <div className="tracking-[0.2em] text-lg sm:text-xl font-bold font-sans gold-gradient-text uppercase whitespace-nowrap">
-        AZ PROPERTY
+      <div className="tracking-[0.2em] text-xl sm:text-2xl font-extrabold font-sans uppercase whitespace-nowrap">
+        <span className="text-white">AZ</span>&nbsp;<span className="gold-gradient-text">PROPERTY</span>
       </div>
 
       {/* Tagline */}
@@ -27,10 +27,6 @@ export const AZLogo: React.FC<{ size?: 'sm' | 'md' | 'lg' }> = ({ size = 'md' })
         Where quality feels at home.
       </p>
 
-      {/* Subtagline */}
-      <p className="text-[11px] sm:text-xs text-zinc-400 font-sans tracking-wider font-normal mt-0.5">
-        Property services with pride.
-      </p>
     </div>
   );
 };
